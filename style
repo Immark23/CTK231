@@ -1,0 +1,112 @@
+body {
+    background-color: #eeeeee;
+    color: #222222;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.site-header {
+    background-color: #990000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    background-color: #990000;
+    color: white;
+    padding: 15px;
+}
+
+h2 {
+    background-color: #ffcc00;
+    color: #990000;
+    padding: 10px;
+}
+
+h3 {
+    background-color: #dddddd;
+    color: #990000;
+    padding: 8px;
+}
+
+main {
+    background-color: white;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.navigation {
+    background-color: #222222;
+    padding: 10px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navigation a:link {
+    color: red;
+}
+
+.navigation a:hover {
+    color: yellow;
+}
+
+.navigation a:visited {
+    color: green;
+}
+
+.image-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-box img {
+    width: 500px;
+    max-width: 100%;
+}
+
+.program-info {
+    padding: 10px;
+}
+
+.requirements-content {
+    padding: 10px;
+}
+
+.courses {
+    padding: 10px;
+}
+
+.sequence {
+    background-color: #f5f5f5;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.important {
+    color: #990000;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
