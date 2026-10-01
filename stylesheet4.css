@@ -1,0 +1,86 @@
+/* Make ALL text Helvetica or Arial */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: orange;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* Header */
+header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: #333333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* Links */
+a:link {
+    color: red;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:visited {
+    color: green;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+/* Content box */
+.content-box {
+    background-color: white;
+    padding: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Center a paragraph */
+.center-text {
+    text-align: center;
+}
+
+/* Justify a paragraph */
+.justified-text {
+    text-align: justify;
+}
+
+/* Images */
+img {
+    border: 8px solid black;
+    padding: 10px;
+    background-color: yellow;
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
