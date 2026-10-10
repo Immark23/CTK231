@@ -1,0 +1,45 @@
+* { box-sizing: border-box; }
+html { background: #999; }
+body { margin: 0; padding: 16px 2.7%; color: #111; font-family: Georgia, 'Times New Roman', serif; }
+.site { max-width: 1210px; width: 100%; margin: 0 auto; border: 4px solid #064a9e; background: #fff; }
+.site-header { min-height: 102px; padding: 28px 30px 20px; background: linear-gradient(#0789e4, #0750a6); font-family: Helvetica, Arial, sans-serif; }
+.site-header h1 { margin: 0; font-size: clamp(24px, 3vw, 36px); font-style: italic; font-weight: 400; }
+.site-header h1 a { color: #75c9ff; text-decoration: none; }
+.site-header h1 a:hover, .site-header h1 a:focus { color: #fff; }
+.navigation { display: flex; background: linear-gradient(#087fe0, #064a9e); font-family: Helvetica, Arial, sans-serif; }
+.navigation a, .navigation .nav-empty { flex: 1 1 25%; min-width: 0; min-height: 49px; display: flex; align-items: center; padding: 0 28px; border-right: 4px solid #06458f; color: #72c8ff; font-size: 20px; font-weight: 700; text-decoration: none; }
+.navigation .nav-empty { border-right: 0; }
+.navigation a:hover, .navigation a:focus, .navigation a.active { color: #fff; background: linear-gradient(#0756ad, #033d87); }
+main h2 { margin: 0 0 20px; padding: 0 0 6px; border-bottom: 3px solid #064a9e; color: #003b91; font: 24px Helvetica, Arial, sans-serif; }
+.welcome-layout { display: grid; grid-template-columns: 33.3% 66.7%; }
+.about-layout { display: grid; grid-template-columns: 66.7% 33.3%; }
+.sidebar { padding: 16px; background: #add8e6; }
+.main-content { min-width: 0; padding: 16px; background: #fff; }
+main p { margin: 0 0 16px; font-size: 16px; line-height: 1.13; }
+.bold-justified { font-weight: bold; text-align: justify; }
+.red-link { color: #d21b0b; font-weight: bold; text-decoration: none; }
+.red-link:hover, .red-link:focus { color: #064a9e; text-decoration: underline; }
+.float-image { float: left; width: 54%; max-width: 420px; height: auto; margin: 0 20px 12px 0; border: 3px solid #064a9e; }
+.about-image { float: right; width: 54%; max-width: 420px; height: auto; margin: 0 0 12px 20px; border: 3px solid #064a9e; }
+.gallery-layout { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding: 16px; }
+.gallery-card { min-width: 0; }
+.gallery-card h2 { margin-bottom: 20px; }
+.gallery-card img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; margin-bottom: 18px; }
+.gallery-card p { margin-bottom: 14px; }
+.site-footer { min-height: 108px; display: flex; align-items: center; padding: 12px; background: #d71900; border-top: 4px solid #064a9e; font-family: Georgia, serif; }
+.isu-mark { display: inline-flex; align-items: center; gap: 8px; color: white; text-decoration: none; }
+.seal { width: 76px; height: 76px; display: grid; place-items: center; flex: 0 0 76px; border: 3px double white; border-radius: 50%; font-family: Georgia, serif; font-size: 22px; font-weight: bold; }
+.university-name { font-family: Georgia, serif; font-size: 27px; line-height: .88; }
+.university-name small { display: block; margin-top: 6px; font-size: 13px; font-style: italic; }
+@media (max-width: 760px) {
+  body { padding: 8px; }
+  .site-header { padding: 22px 16px; }
+  .navigation a, .navigation .nav-empty { padding: 10px; min-height: 48px; font-size: 14px; justify-content: center; text-align: center; }
+  .welcome-layout, .about-layout { grid-template-columns: 1fr; }
+  .gallery-layout { grid-template-columns: 1fr; }
+  .gallery-card img { max-height: 560px; aspect-ratio: auto; object-fit: contain; background: #eee; }
+  .float-image, .about-image { width: 48%; margin-right: 12px; margin-left: 0; }
+  .about-image { float: left; }
+  .university-name { font-size: 21px; }
+  .seal { width: 58px; height: 58px; flex-basis: 58px; }
+}
