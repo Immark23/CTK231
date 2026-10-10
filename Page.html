@@ -1,0 +1,72 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+            <h1>Main Heading</h1>
+            <p>A website demonstrating CSS Grid, floats, and spacing.</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <h2>Sidebar</h2>
+            <p>This sidebar contains additional information.</p>
+            <p>CSS Grid makes it easy to organize different sections of a webpage.</p>
+        </aside>
+
+        <main>
+            <h2>Main Content</h2>
+
+            <img class="floatimg" src="images/TownHall.png"
+                 alt="Town Hall building">
+
+            <p>
+                CSS Grid is a layout system that helps organize content into
+                rows and columns. It makes it easier to build structured
+                webpages with headers, navigation, sidebars, main content,
+                and footers.
+            </p>
+
+            <p>
+                The wrapper centers the content in the browser. Margins
+                provide space outside an element, while padding provides
+                space between the content and its border.
+            </p>
+
+            <p class="clearfloat">
+                This paragraph starts below the floated image because
+                the clear property prevents it from wrapping around the image.
+            </p>
+
+            <h2>Using CSS Grid</h2>
+
+            <p>
+                The grid-template-columns property defines the columns.
+                Using repeat(12, 1fr) creates twelve equal columns.
+                Grid-column lets elements span across multiple columns.
+            </p>
+        </main>
+
+        <footer>
+            <p>CSS Grid Layout | CTK231</p>
+        </footer>
+
+    </div>
+</body>
+</html>

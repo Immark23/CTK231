@@ -1,0 +1,121 @@
+```css
+/* Page background */
+body {
+    background-color: #999999;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Main wrapper */
+#wrapper {
+    margin: 1em auto;
+    padding: 0;
+    width: 1200px;
+    max-width: calc(100% - 32px);
+    border: 2px solid #ff0000;
+    background-color: #ffffff;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 50px auto 75px;
+}
+
+/* Header spans all 12 columns */
+header {
+    grid-column: span 12;
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+/* Navigation spans all 12 columns */
+nav {
+    grid-column: span 12;
+    background-color: #003399;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav li {
+    padding: 15px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffff00;
+}
+
+/* Sidebar spans 3 of the 12 columns */
+aside {
+    grid-column: span 3;
+    background-color: #add8e6;
+    padding: 20px;
+}
+
+/* Main content spans 9 of the 12 columns */
+main {
+    grid-column: span 9;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/* Float image to the left */
+.floatimg {
+    float: left;
+    width: 300px;
+    max-width: 50%;
+    height: auto;
+    margin: 0 20px 10px 0;
+    border: 2px solid #003399;
+}
+
+/* Stop text from wrapping around the floated image */
+.clearfloat {
+    clear: both;
+}
+
+/* Footer spans all 12 columns */
+footer {
+    grid-column: span 12;
+    background-color: #cc2200;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 800px) {
+    #wrapper {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+    }
+
+    header,
+    nav,
+    aside,
+    main,
+    footer {
+        grid-column: span 12;
+    }
+
+    .floatimg {
+        width: 250px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
